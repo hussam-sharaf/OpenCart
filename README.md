@@ -40,3 +40,19 @@ src/
 │   └── resources/
 │       ├── features/       # Cucumber feature files
 │       └── allure/         # Allure environment config
+```
+
+
+### 🏃 Running Tests
+```bash
+Basic Execution
+ --> mvn clean test
+
+With Options
+ --> mvn test \
+  -Dbrowser=firefox \         # chromium (default), firefox 
+  -Dheadless=false \          # Show browser window
+  -Dcucumber.filter.tags="@Registration"
+  
+  
+```
