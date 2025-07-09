@@ -1,4 +1,4 @@
-# OpenCart UI Automation Framework
+# OpenCart UI Automation
 
 ![Playwright](https://img.shields.io/badge/Playwright-2.3.0-blue)
 ![Cucumber](https://img.shields.io/badge/Cucumber-7.11.1-green)
