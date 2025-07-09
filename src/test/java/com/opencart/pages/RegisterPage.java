@@ -14,7 +14,6 @@ public class RegisterPage {
     private final Locator lastNameInput;
     private final Locator emailInput;
     private final Locator passwordInput;
-    private final Locator confirmPasswordInput;
     private final Locator privacyPolicyCheckbox;
     private final Locator submitButton;
     private final Locator successMessage;
@@ -33,7 +32,6 @@ public class RegisterPage {
         this.lastNameInput = page.locator("#input-lastname");
         this.emailInput = page.locator("#input-email");
         this.passwordInput = page.locator("#input-password");
-        this.confirmPasswordInput = page.locator("#input-confirm");
         this.privacyPolicyCheckbox = page.locator("input[name='agree']");
         this.newsletterCheckbox = page.locator("input[@id='input-newsletter']");
 
@@ -61,7 +59,6 @@ public class RegisterPage {
         if (lastName != null) lastNameInput.fill(lastName);
         if (email != null) emailInput.fill(email);
         if (password != null) passwordInput.fill(password);
-        if (confirmPassword != null) confirmPasswordInput.fill(confirmPassword);
     }
 
     @Step("Check privacy policy")

@@ -57,6 +57,7 @@ Feature: User Registration
       | Email | Warning: E-Mail Address is already registered! |
 
 
+
     # I assumed that the requirement was to have these password rules:
    # Password must contain at least one uppercase and one number!
   # Password must contain at least one lowercase letter!

@@ -43,8 +43,7 @@ public class PlaywrightManager {
             // Set to false for visible browser
         }
         int instanceId = contexts.size();
-        BrowserContext context = browser.newContext(new Browser.NewContextOptions()
-                .setPermissions(Arrays.asList("camera", "microphone","clipboard-read", "clipboard-write")));
+        BrowserContext context = browser.newContext(new Browser.NewContextOptions());
         Page page = context.newPage();
         contexts.put(instanceId, context);
         pages.put(instanceId, page);
